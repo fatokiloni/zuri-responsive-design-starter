@@ -12,9 +12,9 @@
         <div class="logo">Snapshot</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li onclick="scrollToAbout(event)"><a href="#">About</a></li>
+            <li onclick="scrollToGallery(event)"><a href="#">Gallery</a></li>
+            <li onclick="scrollToContact(event)"><a href="#">Contact</a></li>
         </ul>
     </div>
 
@@ -31,12 +31,11 @@
     </div>
 
     <!-- sub-hero section -->
-    <div class="hero-background">
+    <div class="hero-background" id="js-about">
         <div class="background">
             <h4>Background</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
         </div>
-        <div class="hero-background-pos"></div>
     </div>
     <div class="snapshot-team">
         <h2>Snapshot Team</h2>
@@ -60,7 +59,7 @@
     </div>
 
     <!-- Gallery section -->
-    <div class="gallery-section">
+    <div class="gallery-section" id="js-gallery">
         <div class="gallery-content">
             <h4>Gallery</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nullae rem!</p>
@@ -86,7 +85,7 @@
     </div>
 
     <!-- Footer section -->
-    <div class="footer">
+    <div class="footer" id="js-contact">
         <div class="footer-content">
             <h4>Send a message</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nuleos rem!</p>
@@ -103,5 +102,6 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
